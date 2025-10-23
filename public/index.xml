@@ -1,22 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iA4 Hugo Site</title><link>http://localhost:1313/</link><description>Recent content on iA4 Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to Hugo</title><link>http://localhost:1313/posts/welcome-to-hugo/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>http://localhost:1313/posts/welcome-to-hugo/</guid><description>Welcome to our new Hugo-powered blog! This is a demonstration of how the iA4 WordPress theme has been successfully converted to a static Hugo site.
-Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
-Features of This Site This converted site includes several key features:
-Math Support: We&amp;rsquo;ve integrated KaTeX for beautiful mathematical expressions like $E = mc^2$ and display equations: $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</description></item><item><title>Modern Web Design Project</title><link>http://localhost:1313/portfolio/web-design-project/</link><pubDate>Fri, 12 Jan 2024 16:00:00 +0000</pubDate><guid>http://localhost:1313/portfolio/web-design-project/</guid><description>This project showcases a modern approach to web design, emphasizing clean layouts, intuitive navigation, and responsive design principles.
-Project Overview The goal was to create a website that balances aesthetic appeal with functional usability. The design process involved extensive user research and iterative prototyping.
-Design Process Research Phase: Understanding user needs and business requirements Wireframing: Creating low-fidelity layouts to establish structure Visual Design: Developing the visual language and style guide Prototyping: Building interactive prototypes for user testing Implementation: Working with developers to bring the design to life Key Features Responsive design that works across all devices Accessibility-first approach following WCAG guidelines Performance-optimized with fast loading times Clean, minimalist aesthetic that focuses on content Technologies Used HTML5 and CSS3 JavaScript for interactive elements Responsive grid system Modern web fonts The final result is a website that not only looks great but also provides an excellent user experience across all touchpoints.</description></item><item><title>Mathematical Expressions in Hugo</title><link>http://localhost:1313/posts/math-expressions-demo/</link><pubDate>Wed, 10 Jan 2024 14:30:00 +0000</pubDate><guid>http://localhost:1313/posts/math-expressions-demo/</guid><description>This post demonstrates the mathematical typesetting capabilities of our Hugo site using KaTeX.
-Inline Mathematics You can include inline mathematical expressions like $\alpha + \beta = \gamma$ directly within your text. This makes it easy to discuss mathematical concepts naturally.
-Display Mathematics For more complex expressions, you can use display mode:
-$$\frac{d}{dx}\left( \int_{0}^{x} f(u) , du\right) = f(x)$$
-Complex Equations Here&amp;rsquo;s a more complex example showing the Schrödinger equation:
-$$i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \hat{H} \Psi(\mathbf{r},t)$$</description></item><item><title>Mobile App Interface Design</title><link>http://localhost:1313/portfolio/mobile-app-design/</link><pubDate>Mon, 08 Jan 2024 11:30:00 +0000</pubDate><guid>http://localhost:1313/portfolio/mobile-app-design/</guid><description>A comprehensive mobile application design project focusing on user experience and interface design for a productivity app.
-Challenge Design a mobile application that helps users manage their daily tasks while maintaining simplicity and ease of use.
-Solution Created a clean, intuitive interface that prioritizes the most important features while keeping advanced functionality easily accessible.
-Design Principles Simplicity: Every screen serves a clear purpose Consistency: Unified design language throughout the app Accessibility: Designed for users with varying abilities Performance: Optimized for smooth interactions User Research Conducted extensive user interviews and usability testing to understand pain points in existing productivity apps.</description></item><item><title>Minimalist Design Principles</title><link>http://localhost:1313/posts/minimalist-design-principles/</link><pubDate>Fri, 05 Jan 2024 09:15:00 +0000</pubDate><guid>http://localhost:1313/posts/minimalist-design-principles/</guid><description>The iA4 theme embodies the principles of minimalist design, focusing on content and readability above all else. This philosophy translates beautifully to the Hugo static site generator.
-Less is More Minimalist design isn&amp;rsquo;t about having less content—it&amp;rsquo;s about removing unnecessary elements that distract from your message. Every element on the page should serve a purpose.
-Typography First Good typography is the foundation of minimalist web design. The iA4 theme prioritizes:</description></item><item><title>Brand Identity Design</title><link>http://localhost:1313/portfolio/brand-identity-design/</link><pubDate>Wed, 03 Jan 2024 13:45:00 +0000</pubDate><guid>http://localhost:1313/portfolio/brand-identity-design/</guid><description>A complete brand identity design project for a technology startup, including logo design, color palette, typography, and brand guidelines.
-Project Brief Create a modern, professional brand identity that communicates innovation, reliability, and approachability for a B2B software company.
-Brand Strategy The brand strategy focused on positioning the company as a trusted technology partner that simplifies complex business processes.
-Logo Design The logo design process involved:
-Concept exploration and sketching Digital refinement and testing Color and typography selection Scalability testing across different media Visual Identity System Developed a comprehensive visual identity system including:</description></item><item><title>About</title><link>http://localhost:1313/about/</link><pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate><guid>http://localhost:1313/about/</guid><description>About This Site Welcome to our Hugo-powered website, converted from the beautiful iA4 WordPress theme. This site demonstrates the power of static site generation while maintaining the minimalist aesthetic that made the original theme so popular.
-The Conversion Process This site represents a successful migration from WordPress to Hugo, preserving all the design elements that made iA4 special:
-Clean, minimalist design Focus on typography and readability Responsive layout that works on all devices Fast loading times thanks to static generation Features Mathematical Expressions We&amp;rsquo;ve integrated KaTeX for beautiful mathematical typesetting, making this site perfect for technical content, academic writing, or any content that requires mathematical notation.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iA4 Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on iA4 Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to Hugo</title>
+      <link>http://localhost:1313/posts/welcome-to-hugo/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/welcome-to-hugo/</guid>
+      <description>Welcome to our new Hugo-powered blog! This is a demonstration of how the iA4 WordPress theme has been successfully converted to a static Hugo site.&#xA;Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&#xA;Features of This Site This converted site includes several key features:&#xA;Math Support: We&amp;rsquo;ve integrated KaTeX for beautiful mathematical expressions like $E = mc^2$ and display equations: $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</description>
+    </item>
+    <item>
+      <title>Modern Web Design Project</title>
+      <link>http://localhost:1313/portfolio/web-design-project/</link>
+      <pubDate>Fri, 12 Jan 2024 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/web-design-project/</guid>
+      <description>This project showcases a modern approach to web design, emphasizing clean layouts, intuitive navigation, and responsive design principles.&#xA;Project Overview The goal was to create a website that balances aesthetic appeal with functional usability. The design process involved extensive user research and iterative prototyping.&#xA;Design Process Research Phase: Understanding user needs and business requirements Wireframing: Creating low-fidelity layouts to establish structure Visual Design: Developing the visual language and style guide Prototyping: Building interactive prototypes for user testing Implementation: Working with developers to bring the design to life Key Features Responsive design that works across all devices Accessibility-first approach following WCAG guidelines Performance-optimized with fast loading times Clean, minimalist aesthetic that focuses on content Technologies Used HTML5 and CSS3 JavaScript for interactive elements Responsive grid system Modern web fonts The final result is a website that not only looks great but also provides an excellent user experience across all touchpoints.</description>
+    </item>
+    <item>
+      <title>Mathematical Expressions in Hugo</title>
+      <link>http://localhost:1313/posts/math-expressions-demo/</link>
+      <pubDate>Wed, 10 Jan 2024 14:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/math-expressions-demo/</guid>
+      <description>This post demonstrates the mathematical typesetting capabilities of our Hugo site using KaTeX.&#xA;Inline Mathematics You can include inline mathematical expressions like $\alpha + \beta = \gamma$ directly within your text. This makes it easy to discuss mathematical concepts naturally.&#xA;Display Mathematics For more complex expressions, you can use display mode:&#xA;$$\frac{d}{dx}\left( \int_{0}^{x} f(u) , du\right) = f(x)$$&#xA;Complex Equations Here&amp;rsquo;s a more complex example showing the Schrödinger equation:&#xA;$$i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \hat{H} \Psi(\mathbf{r},t)$$</description>
+    </item>
+    <item>
+      <title>Mobile App Interface Design</title>
+      <link>http://localhost:1313/portfolio/mobile-app-design/</link>
+      <pubDate>Mon, 08 Jan 2024 11:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/mobile-app-design/</guid>
+      <description>A comprehensive mobile application design project focusing on user experience and interface design for a productivity app.&#xA;Challenge Design a mobile application that helps users manage their daily tasks while maintaining simplicity and ease of use.&#xA;Solution Created a clean, intuitive interface that prioritizes the most important features while keeping advanced functionality easily accessible.&#xA;Design Principles Simplicity: Every screen serves a clear purpose Consistency: Unified design language throughout the app Accessibility: Designed for users with varying abilities Performance: Optimized for smooth interactions User Research Conducted extensive user interviews and usability testing to understand pain points in existing productivity apps.</description>
+    </item>
+    <item>
+      <title>Minimalist Design Principles</title>
+      <link>http://localhost:1313/posts/minimalist-design-principles/</link>
+      <pubDate>Fri, 05 Jan 2024 09:15:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/minimalist-design-principles/</guid>
+      <description>The iA4 theme embodies the principles of minimalist design, focusing on content and readability above all else. This philosophy translates beautifully to the Hugo static site generator.&#xA;Less is More Minimalist design isn&amp;rsquo;t about having less content—it&amp;rsquo;s about removing unnecessary elements that distract from your message. Every element on the page should serve a purpose.&#xA;Typography First Good typography is the foundation of minimalist web design. The iA4 theme prioritizes:</description>
+    </item>
+    <item>
+      <title>Brand Identity Design</title>
+      <link>http://localhost:1313/portfolio/brand-identity-design/</link>
+      <pubDate>Wed, 03 Jan 2024 13:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/brand-identity-design/</guid>
+      <description>A complete brand identity design project for a technology startup, including logo design, color palette, typography, and brand guidelines.&#xA;Project Brief Create a modern, professional brand identity that communicates innovation, reliability, and approachability for a B2B software company.&#xA;Brand Strategy The brand strategy focused on positioning the company as a trusted technology partner that simplifies complex business processes.&#xA;Logo Design The logo design process involved:&#xA;Concept exploration and sketching Digital refinement and testing Color and typography selection Scalability testing across different media Visual Identity System Developed a comprehensive visual identity system including:</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>About This Site Welcome to our Hugo-powered website, converted from the beautiful iA4 WordPress theme. This site demonstrates the power of static site generation while maintaining the minimalist aesthetic that made the original theme so popular.&#xA;The Conversion Process This site represents a successful migration from WordPress to Hugo, preserving all the design elements that made iA4 special:&#xA;Clean, minimalist design Focus on typography and readability Responsive layout that works on all devices Fast loading times thanks to static generation Features Mathematical Expressions We&amp;rsquo;ve integrated KaTeX for beautiful mathematical typesetting, making this site perfect for technical content, academic writing, or any content that requires mathematical notation.</description>
+    </item>
+  </channel>
+</rss>
