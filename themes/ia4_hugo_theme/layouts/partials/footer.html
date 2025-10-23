@@ -1,0 +1,57 @@
+        <div class="center">
+            <footer>
+                <div>
+                    <div class="cols">
+                        <div class="col">
+                            <h1 class="teaser-title">Get in Touch</h1>
+                            <p class="message">
+                                Feel free to reach out for collaborations or just a friendly hello!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<!-- KaTeX auto-render script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false},
+                {left: "\\[", right: "\\]", display: true}
+            ]
+        });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-eZrrJcwDc/3u+cYp9Vt3ps8S4CkOyeYw6kN2Bmv0G8E=" crossorigin="anonymous"></script>
+<script src="{{ "js/vendor/throttle-debounce/jquery.ba-throttle-debounce.min.js" | relURL }}"></script>
+<script src="{{ "js/vendor/highlight/highlight.js" | relURL }}"></script>
+
+{{- $pages := where .Site.RegularPages "Draft" "ne" true -}}
+{{- $index := slice -}}
+{{- range $pages -}}
+    {{- $rawSummary := .Summary | plainify -}}
+    {{- $fallbackSummary := .Plain | plainify -}}
+    {{- $summary := cond (gt (len $rawSummary) 0) $rawSummary $fallbackSummary -}}
+    {{- $entry := dict
+        "title" .Title
+        "summary" ($summary | truncate 160)
+        "permalink" .RelPermalink
+        "date" (.Date.Format "January 2, 2006")
+        "tags" (default (slice) .Params.tags)
+        "type" .Type
+    -}}
+    {{- $index = $index | append $entry -}}
+{{- end -}}
+<script>
+  window.ia4SearchIndex = {{ $index | jsonify | safeJS }};
+</script>
+
+<script src="{{ "js/ia4.js" | relURL }}"></script>
+<script src="{{ "js/navigation.js" | relURL }}"></script>

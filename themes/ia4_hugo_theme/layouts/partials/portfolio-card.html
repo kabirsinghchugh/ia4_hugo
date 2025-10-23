@@ -1,0 +1,25 @@
+<div class="portfolio-item">
+    <a href="{{ .Permalink }}" class="portfolio-link">
+        {{ if .Params.featured_image }}
+            <div class="portfolio-image">
+                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Params.featured_image_alt | default .Title }}">
+            </div>
+        {{ end }}
+        <div class="portfolio-content">
+            <h3 class="portfolio-title">{{ .Title }}</h3>
+            {{ $rawSummary := .Summary | plainify }}
+            {{ $fallbackSummary := .Plain | plainify }}
+            {{ $excerpt := cond (gt (len $rawSummary) 0) $rawSummary $fallbackSummary }}
+            {{ if gt (len $excerpt) 0 }}
+                <p class="portfolio-excerpt">{{ $excerpt | truncate 90 }}</p>
+            {{ end }}
+            {{ if .Params.portfolio_types }}
+                <div class="portfolio-types">
+                    {{ range .Params.portfolio_types }}
+                        <span class="portfolio-type">{{ . }}</span>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </a>
+</div>

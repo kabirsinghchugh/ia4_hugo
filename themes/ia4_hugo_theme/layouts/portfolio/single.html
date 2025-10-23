@@ -1,0 +1,73 @@
+{{ define "main" }}
+<div class="center">
+    <article id="portfolio-{{ .File.UniqueID }}" class="portfolio-single">
+        <header class="entry-header">
+            <h1 class="entry-title">{{ .Title }}</h1>
+            <div class="entry-meta">
+                <time class="entry-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Date.Format "January 2, 2006" }}
+                </time>
+                {{ if .Params.portfolio_types }}
+                    <div class="portfolio-types">
+                        {{ range .Params.portfolio_types }}
+                            <span class="portfolio-type">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </header>
+        
+        {{ if .Params.featured_image }}
+            <figure class="featured-image">
+                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Params.featured_image_alt | default .Title }}">
+            </figure>
+        {{ end }}
+        
+        <div class="entry-content">
+            {{ .Content }}
+        </div>
+        
+        {{ if .Params.gallery }}
+            <div class="portfolio-gallery">
+                <h3>Gallery</h3>
+                <div class="gallery-grid">
+                    {{ range .Params.gallery }}
+                        <div class="gallery-item">
+                            <img src="{{ .image | relURL }}" alt="{{ .alt | default "Gallery image" }}">
+                            {{ if .caption }}
+                                <p class="gallery-caption">{{ .caption }}</p>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+        
+        {{ if .Params.project_url }}
+            <div class="portfolio-links">
+                <a href="{{ .Params.project_url }}" target="_blank" class="project-link">View Project</a>
+            </div>
+        {{ end }}
+    </article>
+    
+    <nav class="portfolio-navigation">
+        {{ if .PrevInSection }}
+            <div class="nav-previous">
+                <a href="{{ .PrevInSection.Permalink }}" rel="prev">
+                    <span class="nav-subtitle">Previous Project:</span>
+                    <span class="nav-title">{{ .PrevInSection.Title }}</span>
+                </a>
+            </div>
+        {{ end }}
+        {{ if .NextInSection }}
+            <div class="nav-next">
+                <a href="{{ .NextInSection.Permalink }}" rel="next">
+                    <span class="nav-subtitle">Next Project:</span>
+                    <span class="nav-title">{{ .NextInSection.Title }}</span>
+                </a>
+            </div>
+        {{ end }}
+    </nav>
+</div>
+{{ end }}
+

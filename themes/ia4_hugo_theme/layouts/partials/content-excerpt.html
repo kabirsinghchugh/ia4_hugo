@@ -1,0 +1,59 @@
+<div class="cols teaser no-thumbnail">
+    <div class="col">
+        {{ $tags := .Params.tags }}
+        {{ if $tags }}
+            <div class="tags">
+                <ul class="tags-list">
+                    {{ range $index, $tag := $tags }}
+                        <li class="tag">
+                            <a class="tag__link" href="{{ (printf "/tags/%s/" (urlize $tag)) | relLangURL }}">{{ $tag }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
+        
+        {{ $uniqueID := "" }}
+        {{ if .File }}
+            {{ $uniqueID = .File.UniqueID }}
+        {{ else }}
+            {{ $uniqueID = md5 .Permalink }}
+        {{ end }}
+        
+        <article id="post-{{ $uniqueID }}" class="post">
+            {{ if .Params.featured_image }}
+                <figure class="list">
+                    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Params.featured_image_alt | default .Title }}">
+                </figure>
+            {{ end }}
+            
+            <h2 class="blog-title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            
+            <a href="{{ .Permalink }}">
+                <p class="meta meta--blog">
+                    {{ .Date.Format "January 2, 2006" }}
+                </p>
+            </a>
+            
+            <a href="{{ .Permalink }}">
+                <div class="excerpt-content">
+                    {{ $excerpt := .Summary }}
+                    {{ if $excerpt }}
+                        {{ $words := split $excerpt " " }}
+                        {{ $truncated := delimit (first 25 $words) " " }}
+                        {{ if gt (len $words) 25 }}
+                            {{ $truncated }}...
+                        {{ else }}
+                            {{ $excerpt }}
+                        {{ end }}
+                    {{ else }}
+                        <p>No excerpt available.</p>
+                    {{ end }}
+                </div>
+                <span class="more__text">More</span>
+            </a>
+        </article>
+    </div>
+</div>

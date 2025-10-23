@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="center">
+    <header class="header page-title">
+        <h1 class="page-title page-title-news">
+            News
+        </h1>
+    </header>
+
+    {{ if .Site.RegularPages }}
+        <section id="posts">
+            {{ range first 10 (where .Site.RegularPages "Type" "posts") }}
+                {{ partial "content-excerpt.html" . }}
+            {{ end }}
+        </section>
+        
+        <section id="posts_navigation">
+            {{ if gt (len (where .Site.RegularPages "Type" "posts")) 10 }}
+                <div class="pagination">
+                    <a href="/posts/" class="more-posts">View All Posts</a>
+                </div>
+            {{ end }}
+        </section>
+    {{ else }}
+        <section id="posts_empty">
+            <div class="cols teaser no-thumbnail">
+                <div class="col">
+                    <article>
+                        <h2 class="blog-title">No posts found</h2>
+                        <p>There are no posts to display yet.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+</div>
+{{ end }}
+

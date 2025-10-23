@@ -1,0 +1,36 @@
+baseURL = "http://localhost:1313"
+languageCode = "en-us"
+title = "iA4 Hugo Site"
+theme = "ia4_hugo_theme"
+
+[params]
+  description = "A minimalist blog converted from WordPress iA4 theme"
+  author = "Your Name"
+  
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 20
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  portfolio_type = "portfolio_types"
+

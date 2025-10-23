@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="center">
+    <header class="header page-title">
+        <h1 class="page-title">
+            Portfolio
+        </h1>
+    </header>
+
+    {{ if .Pages }}
+        <section id="portfolio">
+            <div class="portfolio-grid">
+                {{ range .Pages }}
+                    {{ partial "portfolio-card.html" . }}
+                {{ end }}
+            </div>
+        </section>
+        
+        <section id="portfolio_navigation">
+            {{ template "_internal/pagination.html" . }}
+        </section>
+    {{ else }}
+        <section id="portfolio_empty">
+            <div class="cols teaser no-thumbnail">
+                <div class="col">
+                    <article>
+                        <h2 class="blog-title">No portfolio items found</h2>
+                        <p>There are no portfolio items to display yet.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    {{ end }}
+</div>
+{{ end }}
+

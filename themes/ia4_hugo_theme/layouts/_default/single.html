@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="center">
+    <article id="post-{{ .File.UniqueID }}" class="post single-post">
+        {{ if .Params.featured_image }}
+            <figure class="featured-image">
+                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Params.featured_image_alt | default .Title }}">
+            </figure>
+        {{ end }}
+        
+        <header class="entry-header">
+            <h1 class="entry-title">{{ .Title }}</h1>
+            <div class="entry-meta">
+                <time class="entry-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Date.Format "January 2, 2006" }}
+                </time>
+                {{ if .Params.tags }}
+                    <div class="entry-tags">
+                        {{ range .Params.tags }}
+                            <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </header>
+        
+        <div class="entry-content">
+            {{ .Content }}
+        </div>
+        
+        {{ if .Params.categories }}
+            <footer class="entry-footer">
+                <div class="entry-categories">
+                    Categories: 
+                    {{ range $index, $category := .Params.categories }}
+                        {{ if $index }}, {{ end }}
+                        <a href="{{ "/categories/" | relURL }}{{ $category | urlize }}">{{ $category }}</a>
+                    {{ end }}
+                </div>
+            </footer>
+        {{ end }}
+    </article>
+    
+    <nav class="post-navigation">
+        {{ if .PrevInSection }}
+            <div class="nav-previous">
+                <a href="{{ .PrevInSection.Permalink }}" rel="prev">
+                    <span class="nav-subtitle">Previous:</span>
+                    <span class="nav-title">{{ .PrevInSection.Title }}</span>
+                </a>
+            </div>
+        {{ end }}
+        {{ if .NextInSection }}
+            <div class="nav-next">
+                <a href="{{ .NextInSection.Permalink }}" rel="next">
+                    <span class="nav-subtitle">Next:</span>
+                    <span class="nav-title">{{ .NextInSection.Title }}</span>
+                </a>
+            </div>
+        {{ end }}
+    </nav>
+</div>
+{{ end }}
+
