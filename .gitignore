@@ -1,0 +1,155 @@
+###########################
+# General Ignore Rules    #
+###########################
+#
+# Compiled source or object files (if applicable)
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages and archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.log
+
+# Temp or backup files
+*~
+# Ignore all files ending in .bak, regardless of file extension
+*.bak
+
+###########################
+# Operating System Files  #
+###########################
+#
+# Mac/OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+# Thumbnails
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Files created by the Windows system indexer
+[Dd]ocument.[Ss]ummary]Information
+[Tt]humb[sD]b
+
+# Linux
+.nfs*
+
+###########################
+# Build & Dependency Mgrs #
+###########################
+
+# Maven (Java)
+/target/
+pom.xml.tag
+pom.xml.bak
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (Java/Kotlin)
+.gradle
+/build/
+*.class
+# Generated directories
+/out/
+/libs/
+
+# Node/NPM (JavaScript/TypeScript)
+/node_modules
+/dist/
+/temp/
+npm-debug.log
+yarn-error.log
+package-lock.json
+# Yarn
+.yarn/
+.pnp.*
+
+# Python
+# Virtual environments
+/venv
+/env
+__pycache__/
+*.whl
+*.pyc
+
+# Ruby/Bundler
+/vendor/bundle
+/spec/
+Gemfile.lock
+
+# Go (Golang)
+/bin/
+/pkg/
+# Dependency tools
+/vendor/
+
+# Rust/Cargo
+/target/
+
+###########################
+# IDE and Editor Files    #
+###########################
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+/out/
+# Project metadata
+.project
+.classpath
+.settings/
+.idea_modules/
+
+# VS Code
+.vscode/
+# VS Code extensions may use this
+*.code-workspace
+.history
+
+# Eclipse
+.project
+.classpath
+.settings/
+*.launch
+.ide/
+
+# Vim/NeoVim
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# Emacs
+# Various common Emacs temporary file extensions
+#~
+#\#*#
+
+# General Project Config files often containing secrets
+*.env
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
