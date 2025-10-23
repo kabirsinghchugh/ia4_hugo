@@ -39,14 +39,7 @@
     {{- $rawSummary := .Summary | plainify -}}
     {{- $fallbackSummary := .Plain | plainify -}}
     {{- $summary := cond (gt (len $rawSummary) 0) $rawSummary $fallbackSummary -}}
-    {{- $entry := dict
-        "title" .Title
-        "summary" ($summary | truncate 160)
-        "permalink" .RelPermalink
-        "date" (.Date.Format "January 2, 2006")
-        "tags" (default (slice) .Params.tags)
-        "type" .Type
-    -}}
+    {{- $entry := dict "title" .Title "summary" ($summary | truncate 160) "permalink" .RelPermalink "date" (.Date.Format "January 2, 2006") "tags" (default (slice) .Params.tags) "type" .Type -}}
     {{- $index = $index | append $entry -}}
 {{- end -}}
 <script>

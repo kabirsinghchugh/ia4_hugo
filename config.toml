@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "https://sporocarp.chughkabir.com/"
 languageCode = "en-us"
 title = "iA4 Hugo Site"
 theme = "ia4_hugo_theme"
@@ -6,6 +6,10 @@ theme = "ia4_hugo_theme"
 [params]
   description = "A minimalist blog converted from WordPress iA4 theme"
   author = "Your Name"
+
+[environments]
+  [environments.development]
+    baseURL = "http://localhost:1313/"
   
 [menu]
   [[menu.main]]
@@ -33,4 +37,3 @@ theme = "ia4_hugo_theme"
   tag = "tags"
   category = "categories"
   portfolio_type = "portfolio_types"
-

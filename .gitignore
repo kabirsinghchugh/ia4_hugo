@@ -106,6 +106,9 @@ Gemfile.lock
 # Rust/Cargo
 /target/
 
+# Hugo build cache
+resources/.hugo_cache/
+
 ###########################
 # IDE and Editor Files    #
 ###########################

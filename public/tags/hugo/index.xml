@@ -1,26 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hugo on iA4 Hugo Site</title>
-    <link>http://localhost:1313/tags/hugo/</link>
-    <description>Recent content in Hugo on iA4 Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Welcome to Hugo</title>
-      <link>http://localhost:1313/posts/welcome-to-hugo/</link>
-      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/welcome-to-hugo/</guid>
-      <description>Welcome to our new Hugo-powered blog! This is a demonstration of how the iA4 WordPress theme has been successfully converted to a static Hugo site.&#xA;Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&#xA;Features of This Site This converted site includes several key features:&#xA;Math Support: We&amp;rsquo;ve integrated KaTeX for beautiful mathematical expressions like $E = mc^2$ and display equations: $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</description>
-    </item>
-    <item>
-      <title>Mathematical Expressions in Hugo</title>
-      <link>http://localhost:1313/posts/math-expressions-demo/</link>
-      <pubDate>Wed, 10 Jan 2024 14:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/math-expressions-demo/</guid>
-      <description>This post demonstrates the mathematical typesetting capabilities of our Hugo site using KaTeX.&#xA;Inline Mathematics You can include inline mathematical expressions like $\alpha + \beta = \gamma$ directly within your text. This makes it easy to discuss mathematical concepts naturally.&#xA;Display Mathematics For more complex expressions, you can use display mode:&#xA;$$\frac{d}{dx}\left( \int_{0}^{x} f(u) , du\right) = f(x)$$&#xA;Complex Equations Here&amp;rsquo;s a more complex example showing the Schrödinger equation:&#xA;$$i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \hat{H} \Psi(\mathbf{r},t)$$</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on iA4 Hugo Site</title><link>https://sporocarp.chughkabir.com/tags/hugo/</link><description>Recent content in Hugo on iA4 Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://sporocarp.chughkabir.com/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Welcome to Hugo</title><link>https://sporocarp.chughkabir.com/posts/welcome-to-hugo/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/posts/welcome-to-hugo/</guid><description>Welcome to our new Hugo-powered blog! This is a demonstration of how the iA4 WordPress theme has been successfully converted to a static Hugo site.
+Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+Features of This Site This converted site includes several key features:
+Math Support: We&amp;rsquo;ve integrated KaTeX for beautiful mathematical expressions like $E = mc^2$ and display equations: $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</description></item><item><title>Mathematical Expressions in Hugo</title><link>https://sporocarp.chughkabir.com/posts/math-expressions-demo/</link><pubDate>Wed, 10 Jan 2024 14:30:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/posts/math-expressions-demo/</guid><description>This post demonstrates the mathematical typesetting capabilities of our Hugo site using KaTeX.
+Inline Mathematics You can include inline mathematical expressions like $\alpha + \beta = \gamma$ directly within your text. This makes it easy to discuss mathematical concepts naturally.
+Display Mathematics For more complex expressions, you can use display mode:
+$$\frac{d}{dx}\left( \int_{0}^{x} f(u) , du\right) = f(x)$$
+Complex Equations Here&amp;rsquo;s a more complex example showing the Schrödinger equation:
+$$i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r},t) = \hat{H} \Psi(\mathbf{r},t)$$</description></item></channel></rss>
