@@ -26,6 +26,9 @@ var iA4 = (function($) {
         toggleSearch: function(e) {
             var input = $('.navigation input');
             $('.search').toggleClass('current_page_item');
+            $('body').removeClass('menu-open');
+            $('.menu-toggle').attr('aria-expanded', 'false');
+            $('#site-sidebar').attr('aria-hidden', 'true');
 
             // focus input on click
             if (!$('body').hasClass('mobile')) {
@@ -51,8 +54,17 @@ var iA4 = (function($) {
         /**
          * Toggle the mobile menu
          */
-        toggleMenu: function() {
-            $('body').toggleClass('menu-open');
+        toggleMenu: function(forceClose) {
+            var body = $('body');
+            var shouldClose = forceClose === true;
+            if (shouldClose) {
+                body.removeClass('menu-open');
+            } else {
+                body.toggleClass('menu-open');
+            }
+            var isOpen = body.hasClass('menu-open');
+            $('.menu-toggle').attr('aria-expanded', isOpen ? 'true' : 'false');
+            $('#site-sidebar').attr('aria-hidden', isOpen ? 'false' : 'true');
         },
 
         /**
@@ -138,7 +150,12 @@ var iA4 = (function($) {
         keyboardShortcuts: function(e) {
             if ($(':input:focus').size() === 0) {
                 var key = e.keyCode ? e.keyCode : e.which;
-                
+
+                if (key === 27 && $('body').hasClass('menu-open')) {
+                    methods.toggleMenu(true);
+                    e.preventDefault();
+                }
+
                 if (key === 83) {
                     // Bind "s" key to search
                     methods.toggleSearch();
@@ -156,6 +173,9 @@ var iA4 = (function($) {
                 e.preventDefault();
                 methods[$(this).attr('data-action')].call(this, e);
             });
+            $('.site-sidebar a').off('click.ia4').on('click.ia4', function() {
+                methods.toggleMenu(true);
+            });
         },
 
         escapeHtml: function(str) {
@@ -166,6 +186,23 @@ var iA4 = (function($) {
     $('.js-search').on('keyup', $.debounce(250, methods.search));
     $(window).on('resize', methods.adjustPlaceholder);
     $(document).on('keydown', methods.keyboardShortcuts);
+    $(document).off('click.ia4', '.js-theme-toggle').on('click.ia4', '.js-theme-toggle', function() {
+        var body = $('body');
+        body.toggleClass('dark-mode');
+        var isDark = body.hasClass('dark-mode');
+        $(this).attr('aria-pressed', isDark ? 'true' : 'false');
+        try {
+            window.localStorage.setItem('ia4-theme', isDark ? 'dark' : 'light');
+        } catch (e) {}
+    });
+
+    try {
+        var storedTheme = window.localStorage.getItem('ia4-theme');
+        if (storedTheme === 'dark') {
+            $('body').addClass('dark-mode');
+            $('.js-theme-toggle').attr('aria-pressed', 'true');
+        }
+    } catch (e) {}
 
     return {
         initialize: function() {

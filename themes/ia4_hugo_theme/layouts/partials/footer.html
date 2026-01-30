@@ -1,13 +1,21 @@
         <div class="center">
-            <footer>
-                <div>
-                    <div class="cols">
-                        <div class="col">
-                            <h1 class="teaser-title">Get in Touch</h1>
-                            <p class="message">
-                                Feel free to reach out for collaborations or just a friendly hello!
-                            </p>
-                        </div>
+            <footer class="site-footer" role="contentinfo">
+                <div class="footer-columns">
+                    <div class="footer-col footer-left">
+                        <p class="footer-label">Links</p>
+                        <ul class="footer-links">
+                            {{ range .Site.Menus.main }}
+                            <li><a href="{{ .URL }}"{{ with .Params.target }} target="{{ . }}" rel="noopener"{{ end }}>{{ .Name }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-center">
+                        <p class="footer-label">Notes</p>
+                        <p class="footer-text">Short lists, quiet drafts, and a focused queue.</p>
+                    </div>
+                    <div class="footer-col footer-right">
+                        <p class="footer-label">Credits</p>
+                        <p class="footer-text">Built with Hugo. Theme based on iA4.</p>
                     </div>
                 </div>
             </footer>
@@ -29,7 +37,7 @@
     });
 </script>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-eZrrJcwDc/3u+cYp9Vt3ps8S4CkOyeYw6kN2Bmv0G8E=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="{{ "js/vendor/throttle-debounce/jquery.ba-throttle-debounce.min.js" | relURL }}"></script>
 <script src="{{ "js/vendor/highlight/highlight.js" | relURL }}"></script>
 
@@ -48,3 +56,28 @@
 
 <script src="{{ "js/ia4.js" | relURL }}"></script>
 <script src="{{ "js/navigation.js" | relURL }}"></script>
+<script>
+    (function() {
+        var toggle = document.querySelector('.js-theme-toggle');
+        if (!toggle) {
+            return;
+        }
+
+        try {
+            var storedTheme = window.localStorage.getItem('ia4-theme');
+            if (storedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                toggle.setAttribute('aria-pressed', 'true');
+            }
+        } catch (e) {}
+
+        toggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            var isDark = document.body.classList.contains('dark-mode');
+            toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+            try {
+                window.localStorage.setItem('ia4-theme', isDark ? 'dark' : 'light');
+            } catch (e) {}
+        });
+    })();
+</script>

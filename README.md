@@ -9,6 +9,10 @@ A static Hugo site converted from the popular iA4 WordPress theme, maintaining t
 - **Portfolio Gallery**: Three-column grid layout for showcasing creative work
 - **Responsive Design**: Mobile-first approach that works on all devices
 - **Clean Excerpts**: Three-line post excerpts to avoid homepage clutter
+- **Client Search**: Lightweight on-page search across titles, summaries, and tags
+- **Dashboard Page**: Curated watchlist, reading queue, and listening cards
+- **Sidebar Menu**: Left slide-in navigation for mobile
+- **Light/Dark Mode**: Toggleable theme with persisted preference
 - **Fast Performance**: Static site generation for optimal loading speeds
 
 ## Quick Start
@@ -99,11 +103,8 @@ Use KaTeX syntax for mathematical expressions:
 
 ### 1. Netlify (Recommended)
 
-1. Push your site to a Git repository (GitHub, GitLab, etc.)
-2. Connect your repository to Netlify
-3. Set build command: `hugo --minify`
-4. Set publish directory: `public`
-5. Deploy!
+See `docs/netlify-deploy.md` for a full walkthrough, including custom domain
+setup for `blog.chughkabir.com`.
 
 ### 2. Vercel
 
@@ -239,4 +240,3 @@ For Hugo-specific questions, refer to the [Hugo documentation](https://gohugo.io
 ## License
 
 This Hugo theme conversion maintains compatibility with the original iA4 theme license. Please refer to the original theme documentation for licensing details.
-

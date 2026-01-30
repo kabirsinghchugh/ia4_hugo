@@ -3,7 +3,6 @@ title: "Welcome to Hugo"
 date: 2024-01-15T10:00:00Z
 tags: ["hugo", "blogging", "web development"]
 categories: ["Technology"]
-featured_image: "/img/icn-search.svg"
 featured_image_alt: "Hugo logo"
 ---
 
@@ -30,4 +29,3 @@ $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 This is just the beginning. You can now start adding your own content, customizing the design, and making this site truly yours.
 
 The conversion from WordPress to Hugo maintains the minimalist aesthetic of the original iA4 theme while adding the benefits of static site generation.
-

@@ -1,11 +1,11 @@
-baseURL = "https://sporocarp.chughkabir.com/"
+baseURL = "https://blog.chughkabir.com/"
 languageCode = "en-us"
 title = "iA4 Hugo Site"
 theme = "ia4_hugo_theme"
 
 [params]
-  description = "A minimalist blog converted from WordPress iA4 theme"
-  author = "Your Name"
+  description = "Kabir Chugh's Blog"
+  author = "Kabir Chugh"
 
 [environments]
   [environments.development]
@@ -21,9 +21,10 @@ theme = "ia4_hugo_theme"
     url = "/portfolio/"
     weight = 20
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Dashboard"
+    url = "/dashboard/"
     weight = 30
+    params = { target = "_blank" }
 
 [markup]
   [markup.goldmark]

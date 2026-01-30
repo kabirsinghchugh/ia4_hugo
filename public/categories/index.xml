@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on iA4 Hugo Site</title><link>https://sporocarp.chughkabir.com/categories/</link><description>Recent content in Categories on iA4 Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://sporocarp.chughkabir.com/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Technology</title><link>https://sporocarp.chughkabir.com/categories/technology/</link><pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/categories/technology/</guid><description/></item><item><title>Mathematics</title><link>https://sporocarp.chughkabir.com/categories/mathematics/</link><pubDate>Wed, 10 Jan 2024 14:30:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/categories/mathematics/</guid><description/></item><item><title>Design</title><link>https://sporocarp.chughkabir.com/categories/design/</link><pubDate>Fri, 05 Jan 2024 09:15:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/categories/design/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on iA4 Hugo Site</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on iA4 Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technology</title>
+      <link>http://localhost:1313/categories/technology/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>http://localhost:1313/categories/mathematics/</link>
+      <pubDate>Wed, 10 Jan 2024 14:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/mathematics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design</title>
+      <link>http://localhost:1313/categories/design/</link>
+      <pubDate>Fri, 05 Jan 2024 09:15:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/design/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

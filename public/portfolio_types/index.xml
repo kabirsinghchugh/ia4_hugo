@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Portfolio_types on iA4 Hugo Site</title><link>https://sporocarp.chughkabir.com/portfolio_types/</link><description>Recent content in Portfolio_types on iA4 Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 12 Jan 2024 16:00:00 +0000</lastBuildDate><atom:link href="https://sporocarp.chughkabir.com/portfolio_types/index.xml" rel="self" type="application/rss+xml"/><item><title>UI/UX</title><link>https://sporocarp.chughkabir.com/portfolio_types/ui/ux/</link><pubDate>Fri, 12 Jan 2024 16:00:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/portfolio_types/ui/ux/</guid><description/></item><item><title>Web Design</title><link>https://sporocarp.chughkabir.com/portfolio_types/web-design/</link><pubDate>Fri, 12 Jan 2024 16:00:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/portfolio_types/web-design/</guid><description/></item><item><title>App Design</title><link>https://sporocarp.chughkabir.com/portfolio_types/app-design/</link><pubDate>Mon, 08 Jan 2024 11:30:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/portfolio_types/app-design/</guid><description/></item><item><title>Mobile Design</title><link>https://sporocarp.chughkabir.com/portfolio_types/mobile-design/</link><pubDate>Mon, 08 Jan 2024 11:30:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/portfolio_types/mobile-design/</guid><description/></item><item><title>Branding</title><link>https://sporocarp.chughkabir.com/portfolio_types/branding/</link><pubDate>Wed, 03 Jan 2024 13:45:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/portfolio_types/branding/</guid><description/></item><item><title>Graphic Design</title><link>https://sporocarp.chughkabir.com/portfolio_types/graphic-design/</link><pubDate>Wed, 03 Jan 2024 13:45:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/portfolio_types/graphic-design/</guid><description/></item><item><title>Identity</title><link>https://sporocarp.chughkabir.com/portfolio_types/identity/</link><pubDate>Wed, 03 Jan 2024 13:45:00 +0000</pubDate><guid>https://sporocarp.chughkabir.com/portfolio_types/identity/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio_types on iA4 Hugo Site</title>
+    <link>http://localhost:1313/portfolio_types/</link>
+    <description>Recent content in Portfolio_types on iA4 Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jan 2024 16:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/portfolio_types/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UI/UX</title>
+      <link>http://localhost:1313/portfolio_types/ui/ux/</link>
+      <pubDate>Fri, 12 Jan 2024 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio_types/ui/ux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Design</title>
+      <link>http://localhost:1313/portfolio_types/web-design/</link>
+      <pubDate>Fri, 12 Jan 2024 16:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio_types/web-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>App Design</title>
+      <link>http://localhost:1313/portfolio_types/app-design/</link>
+      <pubDate>Mon, 08 Jan 2024 11:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio_types/app-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile Design</title>
+      <link>http://localhost:1313/portfolio_types/mobile-design/</link>
+      <pubDate>Mon, 08 Jan 2024 11:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio_types/mobile-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Branding</title>
+      <link>http://localhost:1313/portfolio_types/branding/</link>
+      <pubDate>Wed, 03 Jan 2024 13:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio_types/branding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graphic Design</title>
+      <link>http://localhost:1313/portfolio_types/graphic-design/</link>
+      <pubDate>Wed, 03 Jan 2024 13:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio_types/graphic-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Identity</title>
+      <link>http://localhost:1313/portfolio_types/identity/</link>
+      <pubDate>Wed, 03 Jan 2024 13:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio_types/identity/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
