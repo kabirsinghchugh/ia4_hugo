@@ -1,6 +1,6 @@
 baseURL = "https://blog.chughkabir.com/"
 languageCode = "en-us"
-title = "iA4 Hugo Site"
+title = "Kabir Chugh's Blog"
 theme = "ia4_hugo_theme"
 
 [params]
