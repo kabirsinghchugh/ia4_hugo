@@ -178,6 +178,7 @@ resources/.hugo_cache/
 
 # Local workflow notes
 /CONTENT_WORKFLOW_LOCAL.md
+/PUBLISHING_WORKFLOW_LOCAL.md
 
 # Editor / local workspace files (common with Obsidian, Sublime, Zed, Netlify CLI)
 .obsidian/
