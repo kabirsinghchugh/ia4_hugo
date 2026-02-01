@@ -1,0 +1,34 @@
+{{ $state := .Get "state" | default "queued" }}
+{{ $title := .Get "title" | default "" }}
+{{ $meta := .Get "meta" }}
+{{ $note := .Get "note" }}
+{{ $img := .Get "img" | default "/images/dashboard/logo.jpeg" }}
+{{ $alt := .Get "alt" | default (printf "Artwork for %s" $title) }}
+
+{{ $status := .Get "status" }}
+{{ if not $status }}
+    {{ if eq $state "repeat" }}
+        {{ $status = "On repeat" }}
+    {{ else }}
+        {{ $status = $state | humanize }}
+    {{ end }}
+{{ end }}
+
+<article class="dashboard-card">
+    <div class="dashboard-media">
+        <img src="{{ $img | relURL }}" alt="{{ $alt }}">
+    </div>
+    <div class="dashboard-body">
+        <div class="dashboard-kicker">
+            <span class="dashboard-status dashboard-status-{{ $state }}">{{ $status }}</span>
+        </div>
+        <h3 class="dashboard-title">{{ $title }}</h3>
+        {{ with $meta }}
+            <p class="dashboard-meta">{{ . }}</p>
+        {{ end }}
+        {{ with $note }}
+            <p class="dashboard-note">{{ . }}</p>
+        {{ end }}
+    </div>
+</article>
+

@@ -1,0 +1,12 @@
+<section class="dashboard-section">
+    <div class="dashboard-header">
+        <h2>{{ .Get "title" | default "" }}</h2>
+        {{ with .Get "description" }}
+            <p>{{ . }}</p>
+        {{ end }}
+    </div>
+    <div class="dashboard-grid">
+        {{ .Inner }}
+    </div>
+</section>
+

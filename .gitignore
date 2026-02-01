@@ -156,3 +156,32 @@ resources/.hugo_cache/
 .vscode/tasks.json
 .vscode/launch.json
 .vscode/extensions.json
+
+###########################
+# Project-Specific         #
+###########################
+
+# Notes and local docs not meant for deployment
+/todo.md
+/portbb.md
+/AGENTS.md
+
+# Local deployment notes or artifacts
+/deployments/
+/docker-deployment.md
+/netlify-deploy.md
+
+# Hugo build output/cache
+/public/
+/resources/
+.hugo_build.lock
+
+# Local workflow notes
+/CONTENT_WORKFLOW_LOCAL.md
+
+# Editor / local workspace files (common with Obsidian, Sublime, Zed, Netlify CLI)
+.obsidian/
+*.sublime-project
+*.sublime-workspace
+.zed/
+.netlify/
