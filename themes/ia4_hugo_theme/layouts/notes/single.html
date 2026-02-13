@@ -1,0 +1,88 @@
+{{ define "main" }}
+<div class="center">
+    <div class="notes-single-layout">
+        <article id="note-{{ .File.UniqueID }}" class="post single-post note-entry">
+            <header class="entry-header note-entry__header">
+                <h1 class="entry-title">{{ .Title }}</h1>
+                <div class="entry-meta">
+                    <time class="entry-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                        {{ .Date.Format "January 2, 2006" }}
+                    </time>
+                </div>
+            </header>
+
+            <div class="entry-content">
+                {{ .Content }}
+            </div>
+        </article>
+
+        <aside class="notes-sidecar notes-sidecar--single" aria-label="Note panel">
+            <h2 class="notes-sidecar__title">Note Panel</h2>
+            <p class="notes-sidecar__text">
+                This note is designed to be refined over time.
+            </p>
+
+            <dl class="notes-sidecar__meta">
+                <dt>Published</dt>
+                <dd>{{ .Date.Format "January 2, 2006" }}</dd>
+                {{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }}
+                    <dt>Last updated</dt>
+                    <dd>{{ .Lastmod.Format "January 2, 2006" }}</dd>
+                {{ end }}
+            </dl>
+
+            {{ with .Params.tags }}
+                <div class="notes-sidecar__group">
+                    <h3>Tags</h3>
+                    <ul class="notes-sidecar__tags">
+                        {{ range . }}
+                            <li>
+                                <a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+
+            {{ $allNotes := where .Site.RegularPages "Section" "notes" }}
+            {{ $relatedNotes := where $allNotes "Permalink" "ne" .Permalink }}
+            {{ if gt (len .Params.tags) 0 }}
+                {{ $relatedNotes = where $relatedNotes "Params.tags" "intersect" (slice (index .Params.tags 0)) }}
+            {{ end }}
+            {{ if gt (len $relatedNotes) 0 }}
+                <div class="notes-sidecar__group">
+                    <h3>Related Notes</h3>
+                    <ul class="notes-sidecar__related">
+                        {{ range first 4 $relatedNotes.ByDate.Reverse }}
+                            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+
+            <p class="notes-sidecar__backlink">
+                <a href="{{ "/notes/" | relURL }}">Back to all notes</a>
+            </p>
+        </aside>
+    </div>
+
+    <nav class="post-navigation note-navigation">
+        {{ if .PrevInSection }}
+            <div class="nav-previous">
+                <a href="{{ .PrevInSection.Permalink }}" rel="prev">
+                    <span class="nav-subtitle">Previous Note:</span>
+                    <span class="nav-title">{{ .PrevInSection.Title }}</span>
+                </a>
+            </div>
+        {{ end }}
+        {{ if .NextInSection }}
+            <div class="nav-next">
+                <a href="{{ .NextInSection.Permalink }}" rel="next">
+                    <span class="nav-subtitle">Next Note:</span>
+                    <span class="nav-title">{{ .NextInSection.Title }}</span>
+                </a>
+            </div>
+        {{ end }}
+    </nav>
+</div>
+{{ end }}

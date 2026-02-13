@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div class="center">
+    <header class="header page-title notes-page-title">
+        <h1 class="page-title">Notes</h1>
+        {{ with .Description }}
+            <p class="notes-intro">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    {{ $notes := .Pages.ByDate.Reverse }}
+    {{ if $notes }}
+        <div class="notes-overview">
+            <section class="notes-list-grid" aria-label="Notes list">
+                {{ range $notes }}
+                    <article class="note-card">
+                        <h2 class="note-card__title">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h2>
+                        <p class="note-card__meta">{{ .Date.Format "January 2, 2006" }}</p>
+
+                        {{ $summary := .Summary | plainify }}
+                        {{ if gt (len $summary) 0 }}
+                            <p class="note-card__summary">{{ $summary | truncate 180 }}</p>
+                        {{ else }}
+                            <p class="note-card__summary">No summary yet.</p>
+                        {{ end }}
+
+                        {{ with .Params.tags }}
+                            <ul class="note-card__tags">
+                                {{ range first 4 . }}
+                                    <li><span class="note-card__tag">{{ . }}</span></li>
+                                {{ end }}
+                            </ul>
+                        {{ end }}
+
+                        <p class="note-card__cta">
+                            <a href="{{ .Permalink }}">Open note</a>
+                        </p>
+                    </article>
+                {{ end }}
+            </section>
+
+            <aside class="notes-sidecar notes-sidecar--list" aria-label="Notes section details">
+                <h2 class="notes-sidecar__title">Notebook</h2>
+                <p class="notes-sidecar__text">
+                    Evergreen notes, working ideas, and concept links.
+                </p>
+                <dl class="notes-sidecar__meta">
+                    <dt>Total notes</dt>
+                    <dd>{{ len $notes }}</dd>
+                    <dt>Latest update</dt>
+                    <dd>{{ (index $notes 0).Date.Format "January 2, 2006" }}</dd>
+                </dl>
+            </aside>
+        </div>
+    {{ else }}
+        <section class="notes-empty">
+            <article class="note-card note-card--empty">
+                <h2 class="blog-title">No notes yet</h2>
+                <p>Start with one evergreen idea and grow the graph over time.</p>
+            </article>
+        </section>
+    {{ end }}
+</div>
+{{ end }}

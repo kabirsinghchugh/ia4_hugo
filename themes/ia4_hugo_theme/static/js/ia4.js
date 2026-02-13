@@ -178,6 +178,27 @@ var iA4 = (function($) {
             });
         },
 
+        scrollTop: function() {
+            if ('scrollBehavior' in document.documentElement.style) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
+            $('html, body').animate({ scrollTop: 0 }, 250);
+            window.scrollTo(0, 0);
+        },
+
+        updateScrollTopButton: function() {
+            var button = $('.back-to-top');
+            if (!button.length) {
+                return;
+            }
+
+            var threshold = $(window).height();
+            var shouldShow = $(window).scrollTop() > threshold;
+            button.toggleClass('is-visible', shouldShow);
+            button.attr('aria-hidden', shouldShow ? 'false' : 'true');
+        },
+
         escapeHtml: function(str) {
             return $('<div/>').text(str || '').html();
         }
@@ -185,6 +206,7 @@ var iA4 = (function($) {
 
     $('.js-search').on('keyup', $.debounce(250, methods.search));
     $(window).on('resize', methods.adjustPlaceholder);
+    $(window).on('scroll.ia4 resize.ia4', methods.updateScrollTopButton);
     $(document).on('keydown', methods.keyboardShortcuts);
     $(document).off('click.ia4', '.js-theme-toggle').on('click.ia4', '.js-theme-toggle', function() {
         var body = $('body');
@@ -208,6 +230,7 @@ var iA4 = (function($) {
         initialize: function() {
             methods.registerEvents();
             methods.adjustPlaceholder();
+            methods.updateScrollTopButton();
         },
     };
 

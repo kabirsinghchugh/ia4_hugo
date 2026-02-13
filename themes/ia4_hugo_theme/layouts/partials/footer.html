@@ -20,6 +20,9 @@
                 </div>
             </footer>
         </div>
+        <button class="back-to-top js-action" data-action="scrollTop" type="button" aria-label="Back to top" aria-hidden="true">
+            <span aria-hidden="true">&#8593;</span>
+        </button>
     </div>
 </div>
 
@@ -38,8 +41,9 @@
 </script>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="{{ "js/vendor/throttle-debounce/jquery.ba-throttle-debounce.min.js" | relURL }}"></script>
-<script src="{{ "js/vendor/highlight/highlight.js" | relURL }}"></script>
+{{ $assetVersion := now.Unix }}
+<script src='{{ printf "%s?v=%d" ("js/vendor/throttle-debounce/jquery.ba-throttle-debounce.min.js" | relURL) $assetVersion }}'></script>
+<script src='{{ printf "%s?v=%d" ("js/vendor/highlight/highlight.js" | relURL) $assetVersion }}'></script>
 
 {{- $pages := where .Site.RegularPages "Draft" "ne" true -}}
 {{- $index := slice -}}
@@ -54,30 +58,5 @@
   window.ia4SearchIndex = {{ $index | jsonify | safeJS }};
 </script>
 
-<script src="{{ "js/ia4.js" | relURL }}"></script>
-<script src="{{ "js/navigation.js" | relURL }}"></script>
-<script>
-    (function() {
-        var toggle = document.querySelector('.js-theme-toggle');
-        if (!toggle) {
-            return;
-        }
-
-        try {
-            var storedTheme = window.localStorage.getItem('ia4-theme');
-            if (storedTheme === 'dark') {
-                document.body.classList.add('dark-mode');
-                toggle.setAttribute('aria-pressed', 'true');
-            }
-        } catch (e) {}
-
-        toggle.addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-            var isDark = document.body.classList.contains('dark-mode');
-            toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
-            try {
-                window.localStorage.setItem('ia4-theme', isDark ? 'dark' : 'light');
-            } catch (e) {}
-        });
-    })();
-</script>
+<script src='{{ printf "%s?v=%d" ("js/ia4.js" | relURL) $assetVersion }}'></script>
+<script src='{{ printf "%s?v=%d" ("js/navigation.js" | relURL) $assetVersion }}'></script>

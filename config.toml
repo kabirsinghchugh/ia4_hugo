@@ -17,6 +17,10 @@ theme = "ia4_hugo_theme"
     url = "/posts/"
     weight = 10
   [[menu.main]]
+    name = "Notes"
+    url = "/notes/"
+    weight = 15
+  [[menu.main]]
     name = "Portfolio"
     url = "/portfolio/"
     weight = 20
