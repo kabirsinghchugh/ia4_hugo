@@ -1,7 +1,6 @@
 ---
 title: "Small Systems Beat Big Plans"
 date: 2026-02-11T08:05:00-05:00
-draft: true
 tags:
   - planning
   - execution

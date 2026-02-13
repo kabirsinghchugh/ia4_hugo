@@ -1,7 +1,6 @@
 ---
 title: "Friction Should Be Intentional"
 date: 2026-02-12T17:40:00-05:00
-draft: true
 tags:
   - habits
   - systems

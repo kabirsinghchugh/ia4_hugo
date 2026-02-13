@@ -1,7 +1,6 @@
 ---
 title: "Attention Is a Design Material"
 date: 2026-02-13T09:15:00-05:00
-draft: true
 tags:
   - design
   - productivity

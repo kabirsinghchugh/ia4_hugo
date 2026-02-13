@@ -1,4 +1,4 @@
 ---
 title: "Notes"
-description: "Evergreen notes and zettelkasten-style ideas."
+description: "Evergreen notes and ideas."
 ---
