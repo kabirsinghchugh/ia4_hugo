@@ -1,0 +1,41 @@
+<article class="note-card portfolio-entry-card">
+    {{ if .Params.featured_image }}
+        <a href="{{ .Permalink }}" class="portfolio-entry-card__media">
+            <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Params.featured_image_alt | default .Title }}">
+        </a>
+    {{ end }}
+
+    <h2 class="note-card__title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <p class="note-card__meta">{{ .Date.Format "January 2, 2006" }}</p>
+
+    {{ $summary := .Summary | plainify }}
+    {{ $fallbackSummary := .Plain | plainify }}
+    {{ $excerpt := cond (gt (len $summary) 0) $summary $fallbackSummary }}
+    {{ if gt (len $excerpt) 0 }}
+        <p class="note-card__summary">{{ $excerpt | truncate 180 }}</p>
+    {{ else }}
+        <p class="note-card__summary">No summary yet.</p>
+    {{ end }}
+
+    {{ with .Params.tags }}
+        <ul class="note-card__tags">
+            {{ range first 4 . }}
+                <li><span class="note-card__tag">{{ . }}</span></li>
+            {{ end }}
+        </ul>
+    {{ else }}
+        {{ with .Params.portfolio_types }}
+            <ul class="note-card__tags">
+                {{ range first 4 . }}
+                    <li><span class="note-card__tag">{{ . }}</span></li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    {{ end }}
+
+    <p class="note-card__cta">
+        <a href="{{ .Permalink }}">Open entry</a>
+    </p>
+</article>

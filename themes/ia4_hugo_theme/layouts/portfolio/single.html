@@ -1,7 +1,18 @@
 {{ define "main" }}
 <div class="center">
-    <article id="portfolio-{{ .File.UniqueID }}" class="portfolio-single">
+    {{ $portfolioRoot := .FirstSection }}
+    {{ $themePage := .CurrentSection }}
+    {{ $hasThemePage := and $themePage (ne $themePage.RelPermalink $portfolioRoot.RelPermalink) }}
+
+    <article id="portfolio-{{ .File.UniqueID }}" class="portfolio-single single-post">
         <header class="entry-header">
+            <p class="portfolio-breadcrumbs">
+                <a href="{{ $portfolioRoot.RelPermalink }}">Portfolio</a>
+                {{ if $hasThemePage }}
+                    <span>/</span>
+                    <a href="{{ $themePage.RelPermalink }}">{{ $themePage.Title }}</a>
+                {{ end }}
+            </p>
             <h1 class="entry-title">{{ .Title }}</h1>
             <div class="entry-meta">
                 <time class="entry-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
@@ -48,13 +59,19 @@
                 <a href="{{ .Params.project_url }}" target="_blank" class="project-link">View Project</a>
             </div>
         {{ end }}
+
+        {{ if $hasThemePage }}
+            <p class="portfolio-backlink">
+                <a href="{{ $themePage.RelPermalink }}">Back to {{ $themePage.Title }}</a>
+            </p>
+        {{ end }}
     </article>
     
     <nav class="portfolio-navigation">
         {{ if .PrevInSection }}
             <div class="nav-previous">
                 <a href="{{ .PrevInSection.Permalink }}" rel="prev">
-                    <span class="nav-subtitle">Previous Project:</span>
+                    <span class="nav-subtitle">Previous Entry:</span>
                     <span class="nav-title">{{ .PrevInSection.Title }}</span>
                 </a>
             </div>
@@ -62,7 +79,7 @@
         {{ if .NextInSection }}
             <div class="nav-next">
                 <a href="{{ .NextInSection.Permalink }}" rel="next">
-                    <span class="nav-subtitle">Next Project:</span>
+                    <span class="nav-subtitle">Next Entry:</span>
                     <span class="nav-title">{{ .NextInSection.Title }}</span>
                 </a>
             </div>
@@ -70,4 +87,3 @@
     </nav>
 </div>
 {{ end }}
-

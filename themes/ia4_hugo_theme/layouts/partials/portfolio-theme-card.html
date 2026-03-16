@@ -1,0 +1,33 @@
+<div class="portfolio-item portfolio-item--theme">
+    <a href="{{ .Permalink }}" class="portfolio-link">
+        {{ if .Params.featured_image }}
+            <div class="portfolio-image">
+                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Params.featured_image_alt | default .Title }}">
+            </div>
+        {{ end }}
+        <div class="portfolio-content">
+            <h3 class="portfolio-title">{{ .Title }}</h3>
+            {{ $rawSummary := .Description | default (.Summary | plainify) }}
+            {{ $fallbackSummary := .Plain | plainify }}
+            {{ $excerpt := cond (gt (len $rawSummary) 0) $rawSummary $fallbackSummary }}
+            {{ if gt (len $excerpt) 0 }}
+                <p class="portfolio-excerpt">{{ $excerpt | truncate 110 }}</p>
+            {{ end }}
+            {{ with .Params.portfolio_types }}
+                <div class="portfolio-types">
+                    {{ range first 1 . }}
+                        <span class="portfolio-type">{{ . }}</span>
+                    {{ end }}
+                </div>
+            {{ end }}
+            <p class="portfolio-collection-count">
+                {{ $entryCount := len .RegularPagesRecursive }}
+                {{ if eq $entryCount 1 }}
+                    1 entry
+                {{ else }}
+                    {{ $entryCount }} entries
+                {{ end }}
+            </p>
+        </div>
+    </a>
+</div>

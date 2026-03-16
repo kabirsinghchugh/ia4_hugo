@@ -1,35 +1,95 @@
 {{ define "main" }}
 <div class="center">
-    <header class="header page-title">
-        <h1 class="page-title">
-            Portfolio
-        </h1>
-    </header>
+    {{ $portfolioRoot := .FirstSection }}
+    {{ $isPortfolioRoot := and .IsSection (eq .RelPermalink $portfolioRoot.RelPermalink) }}
+    {{ $themePages := .Sections.ByWeight }}
+    {{ $entryPages := .RegularPages.ByDate.Reverse }}
 
-    {{ if .Pages }}
-        <section id="portfolio">
-            <div class="portfolio-grid">
-                {{ range .Pages }}
-                    {{ partial "portfolio-card.html" . }}
-                {{ end }}
-            </div>
-        </section>
-        
-        <section id="portfolio_navigation">
-            {{ template "_internal/pagination.html" . }}
-        </section>
-    {{ else }}
-        <section id="portfolio_empty">
-            <div class="cols teaser no-thumbnail">
-                <div class="col">
-                    <article>
-                        <h2 class="blog-title">No portfolio items found</h2>
-                        <p>There are no portfolio items to display yet.</p>
-                    </article>
+    {{ if $isPortfolioRoot }}
+        <header class="header page-title portfolio-page-title">
+            <h1 class="page-title">{{ .Title }}</h1>
+            {{ with .Description }}
+                <p class="portfolio-intro">{{ . }}</p>
+            {{ end }}
+        </header>
+
+        {{ if gt (len $themePages) 0 }}
+            <section id="portfolio" class="portfolio-root-section" aria-label="Portfolio themes">
+                <div class="portfolio-grid portfolio-grid--themes">
+                    {{ range $themePages }}
+                        {{ partial "portfolio-theme-card.html" . }}
+                    {{ end }}
                 </div>
+            </section>
+        {{ end }}
+
+        {{ if gt (len $entryPages) 0 }}
+            <section class="portfolio-root-section" aria-label="Standalone portfolio items">
+                <h2 class="portfolio-collection-heading">Standalone Items</h2>
+                <div class="portfolio-grid">
+                    {{ range $entryPages }}
+                        {{ partial "portfolio-card.html" . }}
+                    {{ end }}
+                </div>
+            </section>
+        {{ end }}
+
+        {{ if and (eq (len $themePages) 0) (eq (len $entryPages) 0) }}
+            <section id="portfolio_empty">
+                <div class="cols teaser no-thumbnail">
+                    <div class="col">
+                        <article>
+                            <h2 class="blog-title">No portfolio items found</h2>
+                            <p>There are no portfolio items to display yet.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        {{ end }}
+    {{ else }}
+        <header class="header page-title portfolio-theme-header">
+            <p class="portfolio-breadcrumbs">
+                <a href="{{ $portfolioRoot.RelPermalink }}">Portfolio</a>
+            </p>
+            <h1 class="page-title">{{ .Title }}</h1>
+            {{ with .Description }}
+                <p class="portfolio-intro">{{ . }}</p>
+            {{ end }}
+            {{ with .Params.portfolio_types }}
+                <div class="portfolio-types">
+                    {{ range . }}
+                        <span class="portfolio-type">{{ . }}</span>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </header>
+
+        {{ if .Params.featured_image }}
+            <figure class="featured-image portfolio-theme-image">
+                <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Params.featured_image_alt | default .Title }}">
+            </figure>
+        {{ end }}
+
+        {{ if gt (len .Content) 0 }}
+            <div class="entry-content portfolio-theme-intro">
+                {{ .Content }}
             </div>
-        </section>
+        {{ end }}
+
+        {{ if gt (len $entryPages) 0 }}
+            <section class="portfolio-entry-grid" aria-label="{{ .Title }} entries">
+                {{ range $entryPages }}
+                    {{ partial "portfolio-entry-card.html" . }}
+                {{ end }}
+            </section>
+        {{ else }}
+            <section class="notes-empty">
+                <article class="note-card note-card--empty">
+                    <h2 class="blog-title">No entries yet</h2>
+                    <p>Add markdown files inside this portfolio folder to populate the collection.</p>
+                </article>
+            </section>
+        {{ end }}
     {{ end }}
 </div>
 {{ end }}
-

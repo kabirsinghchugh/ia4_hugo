@@ -1,9 +1,14 @@
 ---
-title: "Lecture of Critique of Pure Reason"
-date: 2026-02-16T17:28:43+05:30
-portfolio_types: ["Lecture", "AI"]
-featured_image: "/img/copr.jpg"
-featured_image_alt: "Critique of Pure Reason"
+title: "Kant and the Shape of Experience"
+date: 2026-03-16T09:40:00+05:30
+aliases:
+  - "/portfolio/lecture-of-critique-of-pure-reason/"
+  - "/portfolio/ai-lectures/lecture-of-critique-of-pure-reason/"
+  - "/portfolio/threeblueonebrown-style-lectures/lecture-of-critique-of-pure-reason/"
+tags: ["kant", "philosophy", "epistemology"]
+portfolio_types: ["Lecture"]
+featured_image: "/images/dashboard/logo.jpeg"
+featured_image_alt: "Abstract placeholder image for a philosophy lecture"
 gallery: []
 
 ---
