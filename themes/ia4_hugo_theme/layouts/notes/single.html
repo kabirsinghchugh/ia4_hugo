@@ -44,10 +44,11 @@
                 </div>
             {{ end }}
 
+            {{ $noteTags := default (slice) .Params.tags }}
             {{ $allNotes := where .Site.RegularPages "Section" "notes" }}
             {{ $relatedNotes := where $allNotes "Permalink" "ne" .Permalink }}
-            {{ if gt (len .Params.tags) 0 }}
-                {{ $relatedNotes = where $relatedNotes "Params.tags" "intersect" (slice (index .Params.tags 0)) }}
+            {{ if gt (len $noteTags) 0 }}
+                {{ $relatedNotes = where $relatedNotes "Params.tags" "intersect" (slice (index $noteTags 0)) }}
             {{ end }}
             {{ if gt (len $relatedNotes) 0 }}
                 <div class="notes-sidecar__group">
