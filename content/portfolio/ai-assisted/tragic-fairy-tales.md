@@ -1,3 +1,17 @@
+---
+title: "Tragic Fairy tales"
+date: 2026-03-16T09:50:00+05:30
+tags: ["fairy-tales", "prose", ""]
+portfolio_types: ["ai-assisted"]
+featured_image: "/images/dashboard/logo.jpeg"
+featured_image_alt: "Abstract cover image for interface archive note"
+gallery: []
+---
+
+
+
+
+
 Listen close. Push aside the nursery rhymes and the sugar-spun lies they've fed you. What I'm about to tell you isn't a storybook tale. It's a chronicle etched in ash and blood, a testament to what happens when hope is ground into the dirt and a soul is forged in the embers of despair.
 They call her Cinderella now. A name like a whisper, soft and harmless. But that's not her name. Her true name, the one they branded her with, was Aschenputtel. Ash-fool. Cinder-wench. A name meant to break a person, to turn them into the filth they slept in.
 And that's where our story begins.
