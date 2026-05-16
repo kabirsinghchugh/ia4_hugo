@@ -186,3 +186,35 @@ resources/.hugo_cache/
 *.sublime-workspace
 .zed/
 .netlify/
+
+###########################
+# Strict ship rule        #
+###########################
+# This is a PUBLIC repo. Only files Vercel needs to build the Hugo site may
+# ship to GitHub. Everything below is local-only: the agentic layer, raw
+# material, scratch state, screenshots, and dev references.
+#
+# Vercel build inputs that DO ship: config.toml, vercel.json, content/,
+# themes/, layouts/, static/, data/, archetypes/, scripts/vercel-build.sh,
+# README.md.
+
+# Agentic layer (CEO/Manager/subagents — local only)
+/CLAUDE.md
+/agent/
+/.claude/
+/scripts/intake/
+
+# Raw material the user drops for the Manager to process.
+# Contains drafts, API keys, exports, screenshots.
+.inbox/
+
+# Conductor working state (queues, status, per-phase logs)
+.conductor/
+
+# Remember/skill scratch
+.remember/
+
+# Dev references and screenshots — never ship
+/hugo-workflow-reference.html
+/Screenshot_*.png
+*.png.orig
