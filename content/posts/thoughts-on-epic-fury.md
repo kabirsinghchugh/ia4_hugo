@@ -1,6 +1,6 @@
 ---
 title: "Thoughts on America's Epic Fury"
-date: 2026-03-12T20:20:34+05:3
+date: 2026-03-12T20:20:34+05:30
 tags: [politics, war, human-nature]
 categories: [politics]
 featured_image: ""
