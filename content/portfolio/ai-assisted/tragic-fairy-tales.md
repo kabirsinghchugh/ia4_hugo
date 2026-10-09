@@ -3,7 +3,7 @@ title: "Tragic Fairy tales"
 date: 2026-03-16T09:50:00+05:30
 tags: ["fairy-tales", "prose", ""]
 portfolio_types: ["ai-assisted"]
-featured_image: "/images/dashboard/logo.jpeg"
+featured_image: "/images/dashboard/logo.jpg"
 featured_image_alt: "Abstract cover image for interface archive note"
 gallery: []
 ---

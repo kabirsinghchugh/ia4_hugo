@@ -4,7 +4,7 @@ date: 2026-03-16T09:10:00+05:30
 weight: 20
 description: "AI-generated explainer scripts and concept lectures shaped as visual-first, intuition-heavy walkthroughs."
 portfolio_types: ["AI-generated"]
-featured_image: "/images/dashboard/logo.jpeg"
+featured_image: "/images/dashboard/logo.jpg"
 featured_image_alt: "Abstract cover image for explainer lecture collection"
 ---
 

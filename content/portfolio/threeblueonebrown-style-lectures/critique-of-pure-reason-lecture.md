@@ -7,7 +7,7 @@ aliases:
   - "/portfolio/threeblueonebrown-style-lectures/lecture-of-critique-of-pure-reason/"
 tags: ["kant", "philosophy", "epistemology"]
 portfolio_types: ["Lecture"]
-featured_image: "/images/dashboard/logo.jpeg"
+featured_image: "/images/dashboard/logo.jpg"
 featured_image_alt: "Abstract placeholder image for a philosophy lecture"
 gallery: []
 

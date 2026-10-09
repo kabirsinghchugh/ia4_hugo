@@ -3,7 +3,7 @@ title: "Archive Notes on Interfaces"
 date: 2026-03-16T09:50:00+05:30
 tags: ["interface", "archive", "excerpt"]
 portfolio_types: ["Excerpt"]
-featured_image: "/images/dashboard/logo.jpeg"
+featured_image: "/images/dashboard/logo.jpg"
 featured_image_alt: "Abstract cover image for interface archive note"
 gallery: []
 ---

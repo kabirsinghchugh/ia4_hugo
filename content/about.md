@@ -30,9 +30,9 @@ status tags instead of heavy UI.
 {{< /dashboard-section >}}
 
 {{< dashboard-section title="Listening" description="Playlists and single tracks for focused work." >}}
-{{< dashboard-card state="repeat" title="Citylight Drift" meta="38 tracks - Ambient and IDM" note="Soft focus rhythms and neon haze." img="/images/dashboard/logo.jpeg" alt="Cover for Citylight Drift" >}}
-{{< dashboard-card state="repeat" title="Morning Lines" meta="24 tracks - Acoustic" note="Warm strings and steady, patient tempos." img="/images/dashboard/logo.jpeg" alt="Cover for Morning Lines" >}}
-{{< dashboard-card state="repeat" title="Wide Screens" meta="19 tracks - Soundtracks" note="Cinematic cues for focused reading." img="/images/dashboard/logo.jpeg" alt="Cover for Wide Screens" >}}
-{{< dashboard-card state="repeat" title="Signal Bloom" meta="Y. Voss - 3:42" note="Glassy synths and restrained vocals." img="/images/dashboard/logo.jpeg" alt="Cover for Signal Bloom" >}}
+{{< dashboard-card state="repeat" title="Citylight Drift" meta="38 tracks - Ambient and IDM" note="Soft focus rhythms and neon haze." img="/images/dashboard/logo.jpg" alt="Cover for Citylight Drift" >}}
+{{< dashboard-card state="repeat" title="Morning Lines" meta="24 tracks - Acoustic" note="Warm strings and steady, patient tempos." img="/images/dashboard/logo.jpg" alt="Cover for Morning Lines" >}}
+{{< dashboard-card state="repeat" title="Wide Screens" meta="19 tracks - Soundtracks" note="Cinematic cues for focused reading." img="/images/dashboard/logo.jpg" alt="Cover for Wide Screens" >}}
+{{< dashboard-card state="repeat" title="Signal Bloom" meta="Y. Voss - 3:42" note="Glassy synths and restrained vocals." img="/images/dashboard/logo.jpg" alt="Cover for Signal Bloom" >}}
 {{< /dashboard-section >}}
 {{< /dashboard >}}

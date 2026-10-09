@@ -2,7 +2,7 @@
 {{ $title := .Get "title" | default "" }}
 {{ $meta := .Get "meta" }}
 {{ $note := .Get "note" }}
-{{ $img := .Get "img" | default "/images/dashboard/logo.jpeg" }}
+{{ $img := .Get "img" | default "/images/dashboard/logo.jpg" }}
 {{ $alt := .Get "alt" | default (printf "Artwork for %s" $title) }}
 
 {{ $status := .Get "status" }}

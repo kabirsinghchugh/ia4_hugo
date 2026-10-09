@@ -6,7 +6,7 @@ aliases:
   - "/portfolio/anime-roasts/mobile-app-design/"
 tags: ["death-note", "villain", "roast"]
 portfolio_types: ["Anime Roast"]
-featured_image: "/images/dashboard/logo.jpeg"
+featured_image: "/images/dashboard/logo.jpg"
 featured_image_alt: "Abstract cover image for Light roast note"
 gallery: []
 ---
