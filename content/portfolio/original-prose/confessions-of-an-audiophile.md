@@ -76,8 +76,6 @@ This is the sub 1k genre, this is what the audio enthusiasts start with, and the
 
 This should be your default setting unless one is really into earphones. The RHA S500, Beyerdynamic Byron, Sennheiser CX series, Soundmagic e10, e50 or e80 are some of the best in this category. Try to look for an earphone with lots of ear tips, good warranty, sturdy build and tangle free cables.
 
-![soundmagic-e10c-4-3](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/soundmagic-e10c-4-3.jpg)
-
 The Soundmagic E10C
 
 **End Game**
@@ -91,19 +89,13 @@ I am yet to reach this stage, but someday I'll definitely think of getting some 
 
 I highly recommend starting with Audio Technica's M40xs, and rather than buying the more popular M50xs, you can use m40xs with some HM5 pads and have a better product. The m40x is much more neutral, and the pads very comfortable, unlike the fatiguing comfort and in your face bass and treble of the m50s.
 
-[![](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/41gfqxe5obl-_sl500_ac_ss350_-150x150.jpg)](http://192.168.64.2/2017/11/20/confessions-of-an-audiophile/41gfqxe5obl-_sl500_ac_ss350_/)
-
 AudioTechnica M40X
-
-[![](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/7404928-150x150.jpg)](http://192.168.64.2/2017/11/20/confessions-of-an-audiophile/samsung-csc/)
 
 HM5 pads
 
 **Mid Game**
 
 If one has decided to keep two headphones, I highly recommend having a look at the Beyerdynamic dt770 pros, which come in three versions. Skip the 32 ohms one. These are a unique set of cans and offer excellent comfort, both in weight and the pads. One of the most comfortable headphones I've owned, and though these are studio monitor headphones, these have a V-shaped sound, but the Bass is amazingly awesome. I have not heard a better bass response on my electronic or Heavy Metal tracks and is very much controlled. The 80 ohms are the ones I recommend since they offer a better bass and slightly less treble. The 250 ohms' version is the more standard one for recording, but it has, even more, treble in a phone already high in it, which can be piercing to some ears. The 600 ohms' version would require HUGE amplification, and I won't recommend that, though all three versions require a dedicated amp, the 80 ohms version can do with an entry level amp like the fiio e10k.
-
-![beyerdynamic-dt-770-pro-32-ohms-459958](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/beyerdynamic-dt-770-pro-32-ohms-459958.jpg)
 
 Beyerdynamic DT770 Pros
 
@@ -118,15 +110,11 @@ Again still I'm stuck in the mid-fi category, I'm more than happy with these clo
 
 Now we come to the Sennheisers, who specialize in open cans. The Sennheiser HD series are some of the most neutral and amazing headphones you can buy. I highly recommend buying the HD598 Special edition series, or other variants in Sennheiser's HD 5xx series if you can get them for cheap. The HD598 is THE MOST COMFORTABLE HEADPHONE I'VE EVER PUT ON. The sound is balanced, the bass isn't too bad, the mids are exceptional, and the trebles are high but not as much as the Beyers. You can listen to them for hours without fatigue and can be driven without an amp, though a fiio can definitely help. Try to get a used one since these are the ones you'll want to upgrade, I know I would, now I've tasted the truth of true audiophile sound.
 
-![41x8zpjlkjl-_sy450_](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/41x8zpjlkjl-_sy450_.jpg)
-
 Sennheiser HD598 SR
 
 **Mid Game**
 
 The Philips Fidelio X2 series are some of the highest recommended phones. But my lifetime mid-fis would be again, the Sennheisers. Now the Sennheiser HD 600 and HD 650 are LEGENDARY headphones. Audio is something which suffers from diminishing returns, so when you buy a decent headphone from a cheap one, there is usually a world of difference, but the more money you keep on throwing, the difference would be marginal, and ultimately just a different type of sound, so it's your decision on finding the optimal stopping point. But even if the HD600 and HD650s might offer a 15% improvement over the already stellar HD598s, then, why not? Given that they come at the same price as Bose's QC35, which is at the same price, or even hi-fi systems, one can definitely get some exceptionally good headphones at the price. Maybe I'm biased. But these are notorious for their high (300 ohms) impedance and require some god research(not a typo) on the amps which will drive them, though you can't go wrong with a Schiit stack(pronounced SHIT).
-
-![1-1](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/1-1.jpg)
 
 **Massdrop's Sennheiser HD 6xx, a revamped version of the HD650s**
 
@@ -134,13 +122,9 @@ The Philips Fidelio X2 series are some of the highest recommended phones. But my
 
 **LOL.** I don't know. I've reserved my endgame to a distant point in life as of now. But if I were given a gift to choose, Beyerdynamic T1, Sennheiser HD800 S, Hifiman 1000, Audeze LCD 3s, Stax, etc. If you're willing to spend in this range( a lakh or more I'll assume you already know much more than me), so enjoy, and yes, I understand you, unless you're spending your dad's money on them, then tch tch. Buy your beats.
 
-![audeze_epk-july_2012-6](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/audeze_epk-july_2012-6.jpg)
-
 Audeze's LCD 3, retailing at above Rs 1 lakh are Planar magnetic headphones
 
 Online communities such as Reddit's Headphone community, Head-fi, ZeosPantera reviews have a lot of details if you're interested in further research.
-
-![stax_lambda_1](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/stax_lambda_1.jpg)
 
 STAX Lambda series Electrostatic headphones. These are definitely endgame.
 
@@ -153,11 +137,7 @@ STAX Lambda series Electrostatic headphones. These are definitely endgame.
 
 The Fiio e10k is an integrated DAC and amp which would suit the id fi game, until you deal with the Sennheiser 600 and above, after which you would require a much better amp. The only upgrade I can suggest which I think would not be wasteful is the popular Schiit Stack, that is the Schiit Modi amp and the Schiit Magni DAC. Tube amps are beyond my stage at present, but I shall keep updating.
 
-[![](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/dsc_0765-150x150.jpg)](http://192.168.64.2/2017/11/20/confessions-of-an-audiophile/dsc_0765/)
-
 Fiio e10k USB DAC AMP
-
-[![](https://kabir.digitalpress.blog/content/images/wordpress/2017/11/maxresdefault-150x150.jpg)](http://192.168.64.2/2017/11/20/confessions-of-an-audiophile/maxresdefault/)
 
 SCHIIT STACK. MAGNI and MODI
 
