@@ -190,4 +190,8 @@ This guide is for both beginners and experienced users, focusing on breadth, spe
 - **Windows Registry**: Use `regtool` for Windows registry access.
 - **Path Conversion**: Use `cygpath` for path conversion.
 
+---
+
+*Adapted from [The Art of Command Line](https://github.com/jlevy/the-art-of-command-line) (MIT licensed), with personal notes added.*
+
 Related notes:
