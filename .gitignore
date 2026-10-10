@@ -190,13 +190,12 @@ resources/.hugo_cache/
 ###########################
 # Strict ship rule        #
 ###########################
-# This is a PUBLIC repo. Only files Vercel needs to build the Hugo site may
-# ship to GitHub. Everything below is local-only: the agentic layer, raw
+# This is a PUBLIC repo. Only files the site build needs may ship to
+# GitHub. Everything below is local-only: the agentic layer, raw
 # material, scratch state, screenshots, and dev references.
 #
-# Vercel build inputs that DO ship: config.toml, vercel.json, content/,
-# themes/, layouts/, static/, data/, archetypes/, scripts/vercel-build.sh,
-# README.md.
+# Build inputs that DO ship: config.toml, content/, themes/, layouts/,
+# static/, data/, archetypes/, README.md.
 
 # Agentic layer (CEO/Manager/subagents — local only)
 /CLAUDE.md

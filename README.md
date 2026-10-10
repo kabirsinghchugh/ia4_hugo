@@ -99,95 +99,13 @@ Use KaTeX syntax for mathematical expressions:
 - Inline math: `$E = mc^2$`
 - Display math: `$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$`
 
-## Deployment Options
+## Deployment
 
-### 1. Netlify (Recommended)
-
-See `docs/netlify-deploy.md` for a full walkthrough, including custom domain
-setup for `blog.chughkabir.com`.
-
-### 2. Vercel
-
-1. Push your site to a Git repository
-2. Import your project to Vercel
-3. Vercel will automatically detect Hugo and configure build settings
-4. Deploy!
-
-### 3. GitHub Pages
-
-1. Create a `.github/workflows/hugo.yml` file:
-
-```yaml
-name: Deploy Hugo site to Pages
-
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-defaults:
-  run:
-    shell: bash
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.120.0
-    steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
-      - name: Build with Hugo
-        env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: |
-          hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./public
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-```
-
-2. Enable GitHub Pages in your repository settings
-3. Push to the main branch
-
-### 4. Traditional Web Hosting
-
-1. Build the site: `hugo --minify`
-2. Upload the contents of the `public/` directory to your web server
-3. Configure your web server to serve the files
+Production (`blog.chughkabir.com`) deploys automatically on pushes to
+`master`: Netlify builds the site with Hugo and serves it (DNS/proxy via
+Cloudflare). Netlify's build settings live in its dashboard — there is no
+config file in this repository. GitHub Actions additionally runs a
+`hugo --minify` build check on every push.
 
 ## Customization
 
